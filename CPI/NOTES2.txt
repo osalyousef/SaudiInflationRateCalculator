@@ -145,3 +145,88 @@ var number1 = window.prompt();
 var date = window.prompt();
 number1 = parseInt(number1)
 console.log(number1*(1+136.4 / 100 ));
+------------------------------------------------------
+
+
+
+
+
+
+
+
+python ;
+
+
+from flask import Flask , render_template , url_for , request
+app = Flask(__name__)
+@app.route('/')
+def index():
+    return render_template('index.html')
+if __name__ == "__main__" :
+    app.run(debug=True)
+
+@app.route("/calculate" , methods=["POST"])
+def calculate():
+    nowNum = float(request.form["nowNum"])  # Assume numerical input
+    date = request.form["date"]
+    result = nowNum * (1+ 136.4 / 100 )
+    
+    return render_template('index.html , result=result')
+
+
+    ------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  html::
+
+  {%extends 'base.html'%}
+{%block head%}
+<h1>حاسبة التضخم السعودي</h1>
+  <header>
+  <nav>
+    <div class="Opt-logo-container">
+    <img src="https://i.imgur.com/Adh6zlE.png" alt="options logo" >
+    </div>
+    <ul class="opt-bar">
+  <li> <a href="#Calculator"> Calculator</a></li>
+  <li> <a href="#About"> About</a></li>
+    </ul>
+    </nav>
+  </header>
+{%endblock%}
+{%block body%}
+<form action="{{ url_for('calculate') }}" method="POST">
+    <div>
+<input type="number" name="nowNum" placeholder="المبلغ حاليًا">
+  </div>
+  <div>
+    <input type="number" name="date" min="2018" max="2023" placeholder="٢٠١٨ كحد ادنى">
+</div>
+<br>
+<div>
+<button type="submit">
+احسب
+</button>
+</div>
+<div>
+<input id="display" readonly>
+<p>المبلغ: {{ result }}</p>
+</div>
+</form>
+{%endblock%}

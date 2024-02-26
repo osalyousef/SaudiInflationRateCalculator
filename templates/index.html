@@ -1,37 +1,53 @@
-{%extends 'base.html'%}
-{%block head%}
+{% extends 'base.html' %}
+
+{% block head %}
 <h1>حاسبة التضخم السعودي</h1>
-  <header>
+<header>
   <nav>
     <div class="Opt-logo-container">
-    <img src="https://i.imgur.com/Adh6zlE.png" alt="options logo" >
+      <img src="https://i.imgur.com/Adh6zlE.png" alt="options logo">
     </div>
     <ul class="opt-bar">
-  <li> <a href="#Calculator"> Calculator</a></li>
-  <li> <a href="#About"> About</a></li>
+      <li><a href="#Calculator">حاسبة التضخم</a></li>
+      <li><a href="#About">من نحن</a></li>
     </ul>
-    </nav>
-  </header>
-{%endblock%}
-{%block body%}
-<form action="inf_">
-  <div id="sAmount">
-<input type="number"  placeholder="المبلغ حاليًا">
-  </div>
-  <div id="fAmount">
-    <input type="number" min="2018" max="2023" placeholder="٢٠١٨ كحد ادنى">
-</div>
-<br>
-<div id="computeKey">
-<button onclick="appendToDisplay('احسب')">
-احسب
-</button>
-</div>
-<div>
-<input id="display" readonly>
-المبلغ
-<script> src="/index.js"</script>
-</div>
-</form>
+  </nav>
+</header>
+{% endblock %}
 
-{%endblock%}
+{% block body %}
+<form action="{{ url_for('calculate') }}" method="POST">
+  <div>
+    <label for="nowNum">المبلغ:</label>
+    <input type="number" id="nowNum" name="nowNum" placeholder="ادخل المبلغ">
+  </div>
+  <div>
+    <label for="date">تاريخ المبلغ:</label>
+    <input type="number" id="date" name="date" min="2018" max="2023" placeholder="ادخل السنة (2018-2023)">
+  </div>
+  <br>
+  <div>
+    <button type="submit">احسب</button>
+  </div>
+  <div>
+    <label for="display">القيمة في سنه 2024:</label>
+<input id="display" name="result" value="{{ result }}" readonly>
+  </div>
+  <p id="error_message"></p>  </form>
+<script>
+  // Handle form submission and display errors (optional)
+  document.querySelector('form').addEventListener('submit', function(event) {
+    const nowNum = document.getElementById('nowNum').value;
+    const date = document.getElementById('date').value;
+    const errorMessage = document.getElementById('error_message');
+
+    if (!nowNum || isNaN(nowNum)) {
+      errorMessage.textContent = 'خطأ: يرجى إدخال رقم صالح للمبلغ.';
+      event.preventDefault();
+    } else if (!date || isNaN(date) || parseInt(date) < 2018 || parseInt(date) > 2023) {
+      errorMessage.textContent = 'خطأ: يرجى إدخال سنة صالحة (2018-2023).';
+      event.preventDefault();
+    }
+  });
+</script>
+{% endblock %}
