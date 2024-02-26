@@ -1,9 +1,37 @@
 {%extends 'base.html'%}
 {%block head%}
-<h1>ABOLETHTEST123</h1>
+<h1>حاسبة التضخم السعودي</h1>
+  <header>
+  <nav>
+    <div class="Opt-logo-container">
+    <img src="https://i.imgur.com/Adh6zlE.png" alt="options logo" >
+    </div>
+    <ul class="opt-bar">
+  <li> <a href="#Calculator"> Calculator</a></li>
+  <li> <a href="#About"> About</a></li>
+    </ul>
+    </nav>
+  </header>
 {%endblock%}
-
 {%block body%}
-
+<form action="inf_">
+  <div id="sAmount">
+<input type="number"  placeholder="المبلغ حاليًا">
+  </div>
+  <div id="fAmount">
+    <input type="number" min="2018" max="2023" placeholder="٢٠١٨ كحد ادنى">
+</div>
+<br>
+<div id="computeKey">
+<button onclick="appendToDisplay('احسب')">
+احسب
+</button>
+</div>
+<div>
+<input id="display" readonly>
+المبلغ
+<script> src="/index.js"</script>
+</div>
+</form>
 
 {%endblock%}

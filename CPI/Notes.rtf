@@ -1,0 +1,286 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\froman\fcharset0 Times-Bold;\f2\froman\fcharset0 Times-Roman;
+\f3\fmodern\fcharset0 Courier;\f4\fnil\fcharset0 HelveticaNeue-Bold;\f5\fnil\fcharset178 GeezaPro-Bold;
+\f6\fnil\fcharset178 GeezaPro;}
+{\colortbl;\red255\green255\blue255;\red14\green14\blue14;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c6667\c6667\c6667;\cssrgb\c100000\c100000\c100000;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid1\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid101\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww14200\viewh14920\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+To calculate the cumulative inflation rate over multiple years, you would need to compound the inflation rates, not just add them. Here\'92s how you can do it:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	1	}\expnd0\expndtw0\kerning0
+Convert each year\'92s inflation rate from a percentage to a decimal (by dividing by 100).\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	2	}\expnd0\expndtw0\kerning0
+Add 1 to each year\'92s inflation rate.\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	3	}\expnd0\expndtw0\kerning0
+Multiply these values together.\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 {\listtext	4	}\expnd0\expndtw0\kerning0
+Subtract 1 from the result and multiply by 100 to get back to a percentage.\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\cf2 \
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240\partightenfactor0
+\ls2\ilvl0
+\f1\b\fs24 \cf0 \kerning1\expnd0\expndtw0 {\listtext	1	}\expnd0\expndtw0\kerning0
+Find the cumulative inflation rate
+\f2\b0 : Add up the annual inflation rates from 2018 to 2023. Let\'92s say this sum is 
+\f3\fs26 I
+\f2\fs24 .\
+\ls2\ilvl0
+\f1\b \kerning1\expnd0\expndtw0 {\listtext	2	}\expnd0\expndtw0\kerning0
+Calculate the equivalent value
+\f2\b0 : The equivalent value of $5 in 2018 can be calculated using the formula:\
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 \
+V=P\'d7(1+ 136.4 / 100 )\
+where:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls3\ilvl0
+\f3\fs26 \cf0 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+V
+\f2\fs24  is the equivalent value in 2023,\
+\ls3\ilvl0
+\f3\fs26 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+P
+\f2\fs24  is the Now amount \
+\ls3\ilvl0
+\f3\fs26 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+I
+\f2\fs24  is the annual inflation rate\
+\ls3\ilvl0
+\f3\fs26 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+n
+\f2\fs24  is the number of years between 2018 and 2023.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+
+\f0\fs28 \cf2 \
+\
+\
+\
+\
+\
+\
+Xml:\
+<data date ="2022-10-10"> \
+<stock>\
+<name>\
+Apple\
+</name>\
+<price>\
+1000$\
+</price>\
+<price>\
+ 1020$\
+</price>\
+<currency>\
+SAR\
+</currency>\
+</stock>\
+<stock>\
+    <name>\
+     Microsoft\
+    </name>\
+    <price>\
+ 200$\
+    </price>\
+    <currency>\
+    SAR\
+    </currency>\
+ </stock>\
+\
+\
+\
+<Meow>\
+    <name>\
+        Letho\
+    </name>\
+    <price>\
+10000000$\
+    </price>\
+    <currency>\
+    SAR\
+    </currency>\
+</Meow>\
+\
+</data>\
+XMLPY:\
+import xml.etree.ElementTree as ET\
+tree = ET.parse ('XMLTEST1.xml')\
+root = tree.getroot()\
+#print(root[2].tag)\
+#print(len(root[0]))\
+#for child in root:\
+#print(root[0][0].tag)\
+#print(root[0][0].text)\
+#print(root[0][1].tag)\
+#print(root[0][1].text)\
+#print(root[0][2].tag)\
+#print(root[0][2].text)\
+#print(root[1][0].tag)\
+#print(root[1][0].text)\
+#print(root[1][1].tag)\
+#print(root[1][1].text)\
+#print(root[1][2].tag)\
+#print(root[1][2].text)\
+#print(root.attrib)\
+#for price in root.iter('price'):\
+ #   print(price.text)\
+print(len (root[0].findall('price')))\
+print( root[0].findall('price')[1].text)\
+\
+\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+
+\f4\b \cf2  <meta charset="UTF-8">\
+    <meta name="description" content="
+\f5 \'cd\'c7\'d3\'c8\'c9
+\f4  
+\f5 \'ca\'d6\'ce\'e3
+\f4  
+\f5 \'d3\'da\'e6\'cf\'ed
+\f4  
+\f5 \'ca\'d3\'c7\'e5\'e3
+\f4  
+\f5 \'dd\'ed
+\f4  
+\f5 \'cd\'d3\'c7\'c8
+\f4  
+\f5 \'c7\'e1\'ca\'d6\'ce\'e3
+\f4  
+\f5 \'e1\'e1\'e3\'de\'c7\'d1\'e4\'c9
+\f4  
+\f5 \'c7\'e6
+\f4  
+\f5 \'c7\'e5\'cf\'c7\'dd
+\f4  
+\f5 \'ca\'d1\'dd\'ed\'e5\'ed\'c9
+\f4  
+\f5 \'c7\'e6
+\f4  
+\f5 \'cd\'ca\'ec
+\f4  
+\f5 \'dd\'e6\'c7\'c6\'cf
+\f4  
+\f5 \'c8\'e4\'df\'ed\'e5
+\f4 ">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <meta property="og:title" content="
+\f5 \'cd\'c7\'d3\'c8\'c9
+\f4  
+\f5 \'c7\'e1\'ca\'d6\'ce\'e3
+\f4  
+\f5 \'c7\'e1\'d3\'da\'e6\'cf\'ed
+\f4 ">\
+    <meta property="og:description" content="
+\f5 \'cd\'c7\'d3\'c8\'c9
+\f4  
+\f5 \'ca\'d6\'ce\'e3
+\f4  
+\f5 \'d3\'da\'e6\'cf\'ed
+\f4  
+\f5 \'ca\'d3\'c7\'e5\'e3
+\f4  
+\f5 \'dd\'ed
+\f4  
+\f5 \'cd\'d3\'c7\'c8
+\f4  
+\f5 \'c7\'e1\'ca\'d6\'ce\'e3
+\f4  
+\f5 \'e1\'e1\'e3\'de\'c7\'d1\'e4\'c9
+\f4  
+\f5 \'c7\'e6
+\f4  
+\f5 \'c7\'e5\'cf\'c7\'dd
+\f4  
+\f5 \'ca\'d1\'dd\'ed\'e5\'ed\'c9
+\f4  
+\f5 \'c7\'e6
+\f4  
+\f5 \'cd\'ca\'ec
+\f4  
+\f5 \'dd\'e6\'c7\'c6\'cf
+\f4  
+\f5 \'c8\'e4\'df\'ed\'e5
+\f4 ">\
+    <meta property="og:image" content="https://i.imgur.com/g4k0MSB.png"> \
+    <meta name="apple-mobile-web-app-capable" content="yes">\
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">\
+    <meta name="apple-mobile-web-app-title" content="Your App Title">\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+
+\f0\b0 \cf2 <h1>
+\f6 \'cd\'c7\'d3\'c8\'c9
+\f0  
+\f6 \'c7\'e1\'ca\'d6\'ce\'e3
+\f0  
+\f6 \'c7\'e1\'d3\'da\'e6\'cf\'ed
+\f0 </h1>\
+  <header>\
+  <nav>\
+    <div class="Opt-logo-container">\
+    <img src="https://i.imgur.com/Adh6zlE.png" alt="options logo" >\
+    </div>\
+    <ul class="opt-bar">\
+  <li> <a href="#Calculator"> Calculator</a></li>\
+  <li> <a href="#About"> About</a></li>\
+    </ul>\
+    </nav>\
+  </header>\
+  <div class="sliding-list">\
+    <!-- sliding list content goes here -->\
+  </div>\
+  <form action="inf_">\
+    <div id="sAmount">\
+  <input type="number"  placeholder="
+\f6 \'c7\'e1\'e3\'c8\'e1\'db
+\f0  
+\f6 \'cd\'c7\'e1\'ed\'f0\'c7
+\f0 ">\
+    </div>\
+    <div id="fAmount">\
+      <input type="number" min="2018" max="2023" placeholder="
+\f6 \uc0\u1634 \u1632 \u1633 \u1640 
+\f0  
+\f6 \'df\'cd\'cf
+\f0  
+\f6 \'c7\'cf\'e4\'ec
+\f0 ">\
+  </div>\
+  <br>\
+  <div id="computeKey">\
+  <button onclick="appendToDisplay('
+\f6 \'c7\'cd\'d3\'c8
+\f0 ')">\
+  
+\f6 \'c7\'cd\'d3\'c8
+\f0 \
+  </button>\
+  </div>\
+  <div>\
+<input id="display" readonly>\
+
+\f6 \'c7\'e1\'e3\'c8\'e1\'db
+\f0 \
+<script> src="/index.js"</script>\
+  </div>\
+  </form>\
+</body>\
+</html>\
+\
+\'97\'97\'97\'97\
+var number1 = window.prompt();\
+var date = window.prompt();\
+number1 = parseInt(number1)\
+console.log(number1*(1+136.4 / 100 ));\
+}
