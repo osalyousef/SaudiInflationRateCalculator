@@ -1,6 +1,25 @@
+h1 {
+border-top-style: solid ;
+border-bottom-style: solid ;
+padding: 20px;
+text-align: center;
+}
 
+
+input#nowNum {
+padding: 25px;
+margin: 25px;
+background-color: #D9D9D9;
+opacity: 0.5;
+position: 50px;
+  }
+input#nowNum::placeholder {
+
+  font-size: 25px;
+}
 body {
-    background-color: rgba(63, 79, 59, 1);;
-    margin: 0%;
-    font-family: sans-serif;
-    }
+    background: linear-gradient( to bottom , #2d4d26 , #3F4F3B );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Alexandria" , sans-serif;
+}

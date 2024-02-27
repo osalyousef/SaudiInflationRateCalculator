@@ -18,12 +18,12 @@
 {% block body %}
 <form action="{{ url_for('calculate') }}" method="POST">
   <div>
-    <label for="nowNum">المبلغ:</label>
+    <label for="nowNum"></label>
     <input type="number" id="nowNum" name="nowNum" placeholder="ادخل المبلغ">
   </div>
   <div>
-    <label for="date">تاريخ المبلغ:</label>
-    <input type="number" id="date" name="date" min="2018" max="2023" placeholder="ادخل السنة (2018-2023)">
+    <label for="date"></label>
+    <input type="number" id="date" name="date" min="2018" max="2018" placeholder="ادخل السنة (2018-2023)">
   </div>
   <br>
   <div>
