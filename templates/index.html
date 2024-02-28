@@ -23,12 +23,12 @@
 
   </div>
   <br>
-  <div>
-    <button type="submit">احسبها</button>
+  <div class="calcContainer">
+    <button class="calculateButton" type="submit"> احسب </button>
   </div>
   <div>
-    <label for="display">القيمة في سنه 2024:</label>
-    <input id="display" name="result" value="{{ result }}" readonly>
+    <label>القيمة في سنه 2024:</label>
+    <input class="display" name="result" value="{{ result }}" readonly>
   </div>
   <p id="error_message"></p>
   <div class="topHeader">
@@ -37,7 +37,6 @@
   </div>
 </div>
 <div class="leftHeader">
-
 </div>
 </form>
 <script>

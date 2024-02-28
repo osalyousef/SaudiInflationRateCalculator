@@ -92,7 +92,33 @@ body {
 .input-data input:valid ~ label {
   transform: translateY(-20px);
   font-size: 15px;
-  color: #518bef;
+  color: hsl(218, 83%, 63%);
 }
+.input-data:last-child{
+  margin-bottom: 70px; /* Adjust this value as needed */
 
-/* No need to repeat styles for focus and valid states in each input field */
+}
+.calcContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.calculateButton{
+  transition: all;
+  background-color: #374733de;
+  border-radius: 10px;
+  color: white;
+  font-size: medium;
+  padding: 16px 50px;
+  margin: -20px 2px 4px 2px; /* Negative top margin */
+  cursor: none;
+}
+.calculateButton:hover{
+  transform: scale(1.1);
+}
+.display{
+margin-top: 30px;
+
+
+}
