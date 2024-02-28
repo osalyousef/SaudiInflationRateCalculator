@@ -1,25 +1,74 @@
-h1 {
-border-top-style: solid ;
-border-bottom-style: solid ;
-padding: 20px;
-text-align: center;
+.topHeader{
 }
 
-
-input#nowNum {
-padding: 25px;
-margin: 25px;
-background-color: #D9D9D9;
-opacity: 0.5;
-position: 50px;
-  }
-input#nowNum::placeholder {
-
-  font-size: 25px;
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Alexanderia', sans-serif;
 }
+
 body {
-    background: linear-gradient( to bottom , #2d4d26 , #3F4F3B );
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: "Alexandria" , sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #3F4F3B;
 }
+
+.input-data {
+  height: 40px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 50px; /* Added spacing between inputs */
+  text-align: right;
+}
+
+.input-data input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid silver;
+  background: transparent;
+  text-align: right;
+}
+
+.input-data label {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: grey;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  text-align: right;
+}
+
+.input-data .underline {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+}
+
+.input-data .underline:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #518bef;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+/* Shared styles for both input states (focus and valid) */
+.input-data input:focus ~ label,
+.input-data input:valid ~ label {
+  transform: translateY(-20px);
+  font-size: 15px;
+  color: #518bef;
+}
+
+/* No need to repeat styles for focus and valid states in each input field */

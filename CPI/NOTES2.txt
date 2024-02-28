@@ -230,3 +230,69 @@ def calculate():
 </div>
 </form>
 {%endblock%}
+
+
+
+
+
+-------------------------
+
+
+
+
+h1 {
+  border-top-style: solid ;
+  border-bottom-style: solid ;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: auto;
+  margin-left: auto;
+  }
+  
+
+
+
+
+
+    background: linear-gradient( to bottom , #2d4d26 , #3F4F3B );
+      font-family: "Alexandria" , sans-serif;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      --
+      <div class="field">
+  <input type="text" placeholder="What's your name?"/>
+  <div class="line"></div>
+</div>
+
+
+
+
+
+
+
+
+ <nav>
+    <div class="Opt-logo-container">
+      <img src="https://i.imgur.com/Adh6zlE.png" alt="options logo">
+    </div>
+    <ul class="opt-bar">
+      <li><a href="#Calculator">حاسبة التضخم</a></li>
+      <li><a href="#About">من نحن</a></li>
+    </ul>
+  </nav>

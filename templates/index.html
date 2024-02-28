@@ -1,43 +1,43 @@
 {% extends 'base.html' %}
 
 {% block head %}
-<h1>حاسبة التضخم السعودي</h1>
 <header>
-  <nav>
-    <div class="Opt-logo-container">
-      <img src="https://i.imgur.com/Adh6zlE.png" alt="options logo">
-    </div>
-    <ul class="opt-bar">
-      <li><a href="#Calculator">حاسبة التضخم</a></li>
-      <li><a href="#About">من نحن</a></li>
-    </ul>
-  </nav>
+
 </header>
 {% endblock %}
 
 {% block body %}
 <form action="{{ url_for('calculate') }}" method="POST">
-  <div>
-    <label for="nowNum"></label>
-    <input type="number" id="nowNum" name="nowNum" placeholder="ادخل المبلغ">
-  </div>
-  <div>
-    <label for="date"></label>
-    <input type="number" id="date" name="date" min="2018" max="2018" placeholder="ادخل السنة (2018-2023)">
+  <div class="input-data">
+    <input type="text" required>
+    <div class="underline"></div>
+    <label for="input1">ادخل المبلغ</label> </div>
+
+
+  <div class="input-data">
+     <div class="input-data">
+    <input type="number" min="2018" max="2018" required>
+    <div class="underline"></div>
+    <label for="input1">ادخل السنة</label> </div>
+
   </div>
   <br>
   <div>
-    <button type="submit">احسب</button>
+    <button type="submit">احسبها</button>
   </div>
   <div>
     <label for="display">القيمة في سنه 2024:</label>
-<input id="display" name="result" value="{{ result }}" readonly>
+    <input id="display" name="result" value="{{ result }}" readonly>
   </div>
-  <p id="error_message"></p>  </form>
+  <p id="error_message"></p>
+  <div class="topHeader">
+  <h1>حاسبة التضخم السعودي</h1>
+</div>
+</form>
 <script>
   // Handle form submission and display errors (optional)
   document.querySelector('form').addEventListener('submit', function(event) {
-    const nowNum = document.getElementById('nowNum').value;
+    const nowNum = document.getElementById('input1').value; // Changed input id
     const date = document.getElementById('date').value;
     const errorMessage = document.getElementById('error_message');
 
