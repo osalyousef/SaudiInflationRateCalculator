@@ -8,8 +8,8 @@ def index():
 
 @app.route("/calculate", methods=["POST"])
 def calculate():
-    now_num = float(request.form["nowNum"])  # Corrected variable name
-    date = request.form["date"]
+    now_num = float(request.form["input1"])  # Corrected variable name
+    date = request.form["input1"]
 
     # Fetch annual inflation data from a reliable source
     # (Replace with API call or database lookup based on your implementation)

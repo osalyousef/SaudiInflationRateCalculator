@@ -2,6 +2,7 @@
 
 {% block head %}
 <header>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
 
 </header>
 {% endblock %}
@@ -9,16 +10,16 @@
 {% block body %}
 <form action="{{ url_for('calculate') }}" method="POST">
   <div class="input-data">
-    <input type="text" required>
+    <input type="text" name="input1" id="input1" required>
     <div class="underline"></div>
     <label for="input1">ادخل المبلغ</label> </div>
 
 
   <div class="input-data">
      <div class="input-data">
-    <input type="number" min="2018" max="2018" required>
+    <input type="number" name="input2" id="input2" min="2018" max="2018" required>
     <div class="underline"></div>
-    <label for="input1">ادخل السنة</label> </div>
+    <label for="input2">ادخل السنة</label> </div>
 
   </div>
   <br>
@@ -31,7 +32,12 @@
   </div>
   <p id="error_message"></p>
   <div class="topHeader">
-  <h1>حاسبة التضخم السعودي</h1>
+  <div class="headerText">
+    <h1>حاسبة التضخم السعودي</h1>
+  </div>
+</div>
+<div class="leftHeader">
+
 </div>
 </form>
 <script>
