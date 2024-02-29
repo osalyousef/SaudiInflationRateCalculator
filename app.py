@@ -22,7 +22,7 @@ def calculate():
         future_value = "Error: Inflation rate cannot be zero."
     except ValueError:
         future_value = "Error: Invalid input. Please enter a valid number."
-
+    
     return render_template('index.html', result=future_value)
 
 if __name__ == "__main__":
