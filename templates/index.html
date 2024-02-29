@@ -3,7 +3,7 @@
 {% block head %}
 <header>
   <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Micro+5&display=swap" rel="stylesheet">
 </header>
 {% endblock %}
 
@@ -17,7 +17,7 @@
 
   <div class="input-data">
      <div class="input-data">
-    <input type="number" name="input2" id="input2" min="2018" max="2018" required>
+    <input type="number" name="input2" id="input2" min="2018" max="2023" required>
     <div class="underline"></div>
     <label for="input2">ادخل السنة</label> </div>
 
@@ -26,24 +26,30 @@
   <div class="calcContainer">
     <button class="calculateButton" type="submit"> احسب </button>
   </div>
-  <div>
-    <label>القيمة في سنه 2024:</label>
-    <input class="display" name="result" value="{{ result }}" readonly>
+
+  <div class="displayContainer">
+    <div class="display" >
+    <input type="number" value="{{ result }}" readonly>
+    <label> القيمة في 2024</label>
+  </div>
   </div>
   <p id="error_message"></p>
-  <div class="topHeader">
+  <div class="topHeader">   </div>
   <div class="headerText">
     <h1>حاسبة التضخم السعودي</h1>
-  </div>
 </div>
 <div class="leftHeader">
+</div>
+<div>
+<img src="/images/coin.png" height="200" alt="C0in pic" title="Settings">
+
 </div>
 </form>
 <script>
   // Handle form submission and display errors (optional)
   document.querySelector('form').addEventListener('submit', function(event) {
     const nowNum = document.getElementById('input1').value; // Changed input id
-    const date = document.getElementById('date').value;
+    const date = document.getElementById('input2').value;
     const errorMessage = document.getElementById('error_message');
 
     if (!nowNum || isNaN(nowNum)) {

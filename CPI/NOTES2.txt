@@ -296,3 +296,83 @@ h1 {
       <li><a href="#About">من نحن</a></li>
     </ul>
   </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  -------
+  {% extends 'base.html' %}
+
+{% block head %}
+<header>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Micro+5&display=swap" rel="stylesheet">
+</header>
+{% endblock %}
+
+{% block body %}
+<form action="{{ url_for('calculate') }}" method="POST">
+  <div class="input-data">
+    <input type="text" name="input1" id="input1" required>
+    <div class="underline"></div>
+    <label for="input1">ادخل المبلغ</label> </div>
+
+
+  <div class="input-data">
+     <div class="input-data">
+    <input type="number" name="input2" id="input2" min="2018" max="2018" required>
+    <div class="underline"></div>
+    <label for="input2">ادخل السنة</label> </div>
+
+  </div>
+  <br>
+  <div class="calcContainer">
+    <button class="calculateButton" type="submit"> احسب </button>
+  </div>
+  <div class="displayContainer">
+    <div class="display" >
+    <input name="result" value="{{ result }}" readonly>
+  <label> القيمة في 2024</label>
+  </div>
+  </div>
+  <p id="error_message"></p>
+  <div class="topHeader">   </div>
+  <div class="headerText">
+    <h1>حاسبة التضخم السعودي</h1>
+</div>
+<div class="leftHeader">
+</div>
+</form>
+<script>
+  // Handle form submission and display errors (optional)
+  document.querySelector('form').addEventListener('submit', function(event) {
+    const nowNum = document.getElementById('input1').value; // Changed input id
+    const date = document.getElementById('input2').value;
+    const errorMessage = document.getElementById('error_message');
+
+    if (!nowNum || isNaN(nowNum)) {
+      errorMessage.textContent = 'خطأ: يرجى إدخال رقم صالح للمبلغ.';
+      event.preventDefault();
+    } else if (!date || isNaN(date) || parseInt(date) < 2018 || parseInt(date) > 2023) {
+      errorMessage.textContent = 'خطأ: يرجى إدخال سنة صالحة (2018-2023).';
+      event.preventDefault();
+    }
+  });
+</script>
+{% endblock %}
