@@ -4,11 +4,16 @@
 <header>
   <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Micro+5&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </header>
 {% endblock %}
 
+
+
+
+
 {% block body %}
-<form action="{{ url_for('calculate') }}" method="POST">
+<form action="{{ url_for('index') }}" method="POST">
   <div class="input-data">
     <input type="text" name="input1" id="input1" required>
     <div class="underline"></div>
@@ -21,11 +26,18 @@
     <div class="underline"></div>
     <label for="input2">ادخل السنة</label> </div>
 
+
+
+
   </div>
   <br>
   <div class="calcContainer">
     <button class="calculateButton" type="submit"> احسب </button>
   </div>
+
+
+
+
 
   <div class="displayContainer">
     <div class="display" >
@@ -33,20 +45,46 @@
     <label> القيمة في 2024</label>
   </div>
   </div>
+
   <p id="error_message"></p>
   <div class="topHeader">   </div>
   <div class="headerText">
     <h1>حاسبة التضخم السعودي</h1>
 </div>
+
+
+
+
 <div class="leftHeader">
 </div>
 <div class="c0inPic">
   <img src="{{ url_for('static', filename='images/coin.png')}}" width="100" height="auto">
 </div>
-<div class="coinsLogo">
-  <img src="{{ url_for('static', filename='images/coinsLogo.png')}}" width="30" height="">
+
+
+
+<nav>
+  <label for="menu-toggle" class="menu-button">الحاسبة</label>
+  <div id="mySidenav" class="sidenav"></div>
+  <a href="/about">
+    <label for="menu-toggle2" class="menu-button2">اعرفني</label>
+  </a>
+  <div id="mySidenav2" class="sidenav2"></div>
+</nav>
+<div class="coinLogoPic">
+  <img src="{{ url_for('static', filename='images/coinsLogo.png')}}" width="30">
 </div>
+<div class="personaPic">
+  <img src="{{ url_for('static', filename='images/Persona.png')}}" width="40">
+</div>
+
+
 </form>
+
+
+
+
+
 <script>
   // Handle form submission and display errors (optional)
   document.querySelector('form').addEventListener('submit', function(event) {
