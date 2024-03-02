@@ -13,7 +13,7 @@
 
 
 {% block body %}
-<form action="{{ url_for('index') }}" method="POST">
+<form action="{{ url_for('calculate') }}" method="POST">
   <div class="input-data">
     <input type="text" name="input1" id="input1" required>
     <div class="underline"></div>
@@ -64,25 +64,27 @@
 
 
 <nav>
-  <label for="menu-toggle" class="menu-button">الحاسبة</label>
-  <div id="mySidenav" class="sidenav"></div>
-  <a href="/about">
-    <label for="menu-toggle2" class="menu-button2">اعرفني</label>
-  </a>
-  <div id="mySidenav2" class="sidenav2"></div>
-</nav>
+  <a href="https://github.com/" class="menu-button">Github</a>
+  <a href="https://www.linkedin.com/" class="menu-button2">Linkedin</a>
+  <a href="https://twitter.com/os_fyousef" class="menu-button3">Twitter</a>
+  <a href="https://twitter.com/os_fyousef" class="menu-button4">ادعمني</a>
+  </nav>
+
+
+
 <div class="coinLogoPic">
-  <img src="{{ url_for('static', filename='images/coinsLogo.png')}}" width="30">
+  <img src="{{ url_for('static', filename='images/GitHub.png')}}" width="50">
 </div>
 <div class="personaPic">
-  <img src="{{ url_for('static', filename='images/Persona.png')}}" width="40">
+  <img src="{{ url_for('static', filename='images/LinkedIn.png')}}" width="33">
 </div>
-
-
+<div class="twitterPic">
+  <img src="{{ url_for('static', filename='images/Twitter.png')}}" width="30">
+</div>
+<div class="Ko-fiPic">
+  <img src="{{ url_for('static', filename='images/Kofi.png')}}" width="37">
+</div>
 </form>
-
-
-
 
 
 <script>
