@@ -6,4 +6,5 @@ currently: the site works on my Arc browser and partially works on chrome but no
 --
 *note: you can ignore ds.store
 ,
+
 Link to the site: https://saudiinflationratecalculator.onrender.com/
