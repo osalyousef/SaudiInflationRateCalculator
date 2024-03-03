@@ -8,22 +8,43 @@ def index():
 
 @app.route("/calculate", methods=["POST"])
 def calculate():
-    now_num = float(request.form["input1"])  # Corrected variable name
+    now_num = float(request.form["input1"])
     date = request.form["input2"]
 
-    # Fetch annual inflation data from a reliable source
-    # (Replace with API call or database lookup based on your implementation)
-    inflation_rate = 2.364  # Example value (adjust for actual data)
+    # Define a dictionary to store the annual inflation rates for each year
+    annual_inflation_rates = {
+        "2018": 33.8343,
+        "2019": -22.4046,
+        "2020": 49.943,
+        "2021": 44.5261,
+        "2022": 33.965,
+        "2023": 32.017
+    }
+
+    # Calculate the cumulative inflation rate for the selected year
+    years = list(annual_inflation_rates.keys())
+    years = sorted(annual_inflation_rates.keys(), reverse=True)  # Sort years in descending order
+    inflation_rate = 0
+    for year in years:
+        inflation_rate += annual_inflation_rates[year]
+        if year == date:
+            break
 
     # Calculate future value using the formula (consider error handling)
     try:
-        future_value = now_num * inflation_rate
-    except ZeroDivisionError:
-        future_value = "Error: Inflation rate cannot be zero."
-    except ValueError:
-        future_value = "Error: Invalid input. Please enter a valid number."
+        # Calculate future value
+        future_value = now_num * (1 + inflation_rate / 100)
 
-    return render_template('index.html', result=future_value)
+        # Extract and format the decimal part
+        future_value_decimal = f"{future_value:.2f}"  # Format to two decimal places
+
+    except ZeroDivisionError:
+        future_value_decimal = "Error: Inflation rate cannot be zero."
+    except ValueError:
+        future_value_decimal = "Error: Invalid input. Please enter a valid number."
+    except TypeError:
+        future_value_decimal = "Error: Invalid year. Please select a valid year."
+    return render_template('index.html', result=future_value_decimal)
 
 if __name__ == "__main__":
     app.run(debug=True)
