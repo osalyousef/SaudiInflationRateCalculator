@@ -247,3 +247,23 @@ input{
     position: absolute;
   
   }
+  @keyframes changeSize {
+    0% {transform:scale(0.6)}
+    100% {transform: scale(1)}
+    }
+    
+    
+    @-moz-keyframes changeSize  /* Firefox */ {
+    0% {transform:scale(0.6)}
+    100% {transform:scale(1)}
+    }
+    
+    @-webkit-keyframes changeSize  /* Safari and Chrome */{
+    0% {transform:scale(0.6)}
+    100% {transform:scale(1)}
+    }
+    
+    @-o-keyframes changeSize  /* Opera */ {
+    0% {transform:scale(0.6)}
+    100% {transform:scale(1)}
+    }
