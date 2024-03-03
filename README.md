@@ -5,4 +5,5 @@ Current goal: make the site compatible with other browsers and phones , every he
 currently: the site works on my Arc browser and partially works on chrome but not as intented .. completely off on safari tho.
 --
 *note: you can ignore ds.store
+,
 Link to the site: https://saudiinflationratecalculator.onrender.com/
