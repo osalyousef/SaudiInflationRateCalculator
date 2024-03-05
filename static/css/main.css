@@ -23,20 +23,17 @@ body {
   height: 7.5rem;
   width: 100%;
   background: #344330;
-  position: relative;
+  position: fixed;
   top: 0px;
   left: 0px;
-  position: fixed;
   opacity: 50%;
 }
 
 .headerText {
   text-align: center;
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 4.375rem;
+transform: translateY(4.375rem);
   color: white;
 }
 
@@ -135,7 +132,7 @@ body {
 }
 
 .displayContainer {
-  margin-top: 3.125rem; /* Converted from 50px to rem */
+  transform: translateY(3.125rem) ; /* Converted from 50px to rem */
 }
 
 .display input {
@@ -159,20 +156,11 @@ body {
   margin-left: 0.5rem; /* Converted from 8px to rem */
 }
 
-.sidenav a {
-  padding: 0.5rem 0.5rem 0.5rem 2rem; /* Converted from 8px 8px 8px 32px to rem */
-  text-decoration: none;
-  font-size: 1.563rem; /* Converted from 25px to rem */
-  color: #fff;
-  display: block;
-  transition: 0.3s;
-}
 
 .menu-button {
   background: #6e5494;
   height: 2.5rem; /* Converted from 40px to rem */
-  margin-left: -33.75rem; /* Converted from -540px to rem */
-  margin-top: -18.75rem; /* Converted from -300px to rem */
+  transform: translateY(-18.75rem) ; /* Converted from -300px to rem */
   float: left;
   line-height: 2.5rem; /* Converted from 40px to rem */
   width: 8.438rem; /* Converted from 135px to rem */
@@ -180,14 +168,14 @@ body {
   color: white;
   border-radius: 0.25rem; /* Converted from 4px to rem */
   cursor: pointer;
-  position: absolute;
+  position: fixed;
+  left: -1rem;
 }
 
 .menu-button2 {
   background: #4692cc;
   height: 2.5rem; /* Converted from 40px to rem */
-  margin-left: -33.75rem; /* Converted from -540px to rem */
-  margin-top: -14.375rem; /* Converted from -230px to rem */
+transform: translateY(-14.375rem) ; /* Converted from -230px to rem */
   float: left;
   line-height: 2.5rem; /* Converted from 40px to rem */
   width: 8.438rem; /* Converted from 135px to rem */
@@ -195,14 +183,14 @@ body {
   color: white;
   border-radius: 0.25rem; /* Converted from 4px to rem */
   cursor: pointer;
-  position: absolute;
+  position: fixed;
+  left: -1rem;
 }
 
 .menu-button3 {
   background: #4692cc;
   height: 2.5rem; /* Converted from 40px to rem */
-  margin-left: -33.75rem; /* Converted from -540px to rem */
-  margin-top: -10.313rem; /* Converted from -165px to rem */
+ transform: translateY(-10.313rem); /* Converted from -165px to rem */
   float: left;
   line-height: 2.5rem; /* Converted from 40px to rem */
   width: 8.438rem; /* Converted from 135px to rem */
@@ -210,14 +198,14 @@ body {
   color: white;
   border-radius: 0.25rem; /* Converted from 4px to rem */
   cursor: pointer;
-  position: absolute;
+  position: fixed;
+  left: -1rem;
 }
 
 .menu-button4 {
   background: #4692cc;
   height: 2.5rem; /* Converted from 40px to rem */
-  margin-left: -33.75rem; /* Converted from -540px to rem */
-  margin-top: -6.25rem; /* Converted from -100px to rem */
+  transform: translateY(-6.25rem) ; /* Converted from -100px to rem */
   float: left;
   line-height: 2.5rem; /* Converted from 40px to rem */
   width: 8.438rem; /* Converted from 135px to rem */
@@ -225,31 +213,32 @@ body {
   color: white;
   border-radius: 0.25rem; /* Converted from 4px to rem */
   cursor: pointer;
-  position: absolute;
+  position: fixed;
+  left: -1rem;
 }
 
 .coinLogoPic {
-  margin-left: -28rem; /* Converted from -448px to rem */
-  margin-top: -19.25rem; /* Converted from -308px to rem */
-  position: absolute;
+  left: 4.9rem; /* Converted from -448px to rem */
+transform: translateY(-19.100rem); 
+ position: fixed;
 }
 
 .personaPic {
-  margin-left: -27.375rem; /* Converted from -438px to rem */
-  transform: translateY(-14.188rem); /* Converted from -227px to rem */
-  position: absolute;
+  left: 5.5rem;
+    transform: translateY(-14.188rem); /* Converted from -227px to rem */
+  position: fixed;
 }
 
 .twitterPic {
-  margin-left: -27.5rem; /* Converted from -440px to rem */
+  left: 5.6rem;
   transform: translateY(-10rem); /* Converted from -160px to rem */
-  position: absolute;
+  position: fixed;
 }
 
 .Ko-fiPic {
-  margin-left: -28.125rem; /* Converted from -450px to rem */
+  left: 4.7rem;
   transform: translateY(-6.688rem); /* Converted from -107px to rem */
-  position: absolute;
+  position: fixed;
 }
 
 @keyframes changeSize {
