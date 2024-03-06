@@ -31,9 +31,9 @@ body {
 
 .headerText {
   text-align: center;
-  position: fixed;
+   position: fixed;
   top: 0;
-transform: translateY(4.375rem);
+transform: translateY(3rem);
   color: white;
 }
 
@@ -51,8 +51,8 @@ transform: translateY(4.375rem);
   height: 3.438rem; /* Converted from 55px to rem */
   width: 100%;
   position: relative;
-  margin-bottom: 3.125rem; /* Converted from 50px to rem */
   text-align: right;
+  
 }
 
 .input-data input {
@@ -155,8 +155,6 @@ transform: translateY(4.375rem);
   margin-top: 0.625rem; /* Converted from 10px to rem */
   margin-left: 0.5rem; /* Converted from 8px to rem */
 }
-
-
 .menu-button {
   background: #6e5494;
   height: 2.5rem; /* Converted from 40px to rem */
@@ -216,7 +214,6 @@ transform: translateY(-14.375rem) ; /* Converted from -230px to rem */
   position: fixed;
   left: -1rem;
 }
-
 .coinLogoPic {
   left: 4.9rem; /* Converted from -448px to rem */
 transform: translateY(-19.100rem); 

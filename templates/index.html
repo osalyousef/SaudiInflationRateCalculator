@@ -5,7 +5,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Micro+5&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/Phone_mQuerie.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/laptop_mQuerie.css') }}">
 </header>
 {% endblock %}
 
@@ -15,14 +16,14 @@
 
 {% block body %}
 <form action="{{ url_for('calculate') }}" method="POST">
-  <div class="input-data">
+  <div class="input-data1">
     <input type="text" name="input1" id="input1" required>
     <div class="underline"></div>
     <label for="input1">ادخل المبلغ</label> </div>
 
 
   <div class="input-data">
-     <div class="input-data">
+     <div class="input-data2">
     <input type="number" name="input2" id="input2" min="2018" max="2023" required>
     <div class="underline"></div>
     <label for="input2">ادخل السنة</label> </div>
@@ -47,8 +48,13 @@
   </div>
   </div>
 
+
   <p id="error_message"></p>
+
+
   <div class="topHeader">   </div>
+
+  
   <div class="headerText">
     <h1>حاسبة التضخم السعودي</h1>
 </div>
@@ -63,14 +69,12 @@
 </div>
 
 
-
-<nav>
+<div class="menu-buttons">
   <a href="https://github.com/osalyousef" class="menu-button">Github</a>
   <a href="https://www.linkedin.com/in/osamh-alyousef-30a279230/" class="menu-button2">Linkedin</a>
   <a href="https://twitter.com/os_fyousef" class="menu-button3">Twitter</a>
   <a href="https://ko-fi.com/osamaalyousef" class="menu-button4">ادعمني</a>
-  </nav>
-
+</div>
 
 
 <div class="coinLogoPic">
