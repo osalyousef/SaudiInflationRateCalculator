@@ -214,7 +214,7 @@
       position: absolute;
         }
     .display{
-transform: translateX(16rem);
+transform: translateX(4.3rem);
     }
     .display input {
       background-color: #338020;
@@ -546,7 +546,9 @@ transform: translateX(16rem);
     position: fixed;
     left: 27rem;
       }
-  
+      .display{
+        transform: translateX(2.3rem);
+            }
   .display input {
     background-color: #338020;
     box-shadow: #344330;
