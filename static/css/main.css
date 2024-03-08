@@ -1,4 +1,4 @@
-@media (min-width:320px ) {
+@media screen and (min-width:320px ) and (max-width:1023px) {
   
   input {
       font-family: "Alexandria";
@@ -214,7 +214,7 @@
       position: absolute;
         }
     .display{
-transform: translateX(16rem);
+transform: translateX(4.3rem);
     }
     .display input {
       background-color: #338020;
@@ -287,32 +287,38 @@ transform: translateX(16rem);
       position: fixed;
       left: 0rem;
     }
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
     .GithubPic  img  {
-      left: 0.3rem; 
+      left: 1rem; 
     transform: translateY(-19.100rem); 
-     position: fixed;
+     position: absolute;
      width: 3rem;
     }
     
     .LinkedinPic img {
-      left: 0.6rem;
+      left: 1.3rem;
        transform: translateY(-14.188rem); 
-      position: fixed;
+      position: absolute;
       width: 2.3rem;
   }   
     
     .twitterPic  img {
-      left: 0.8rem;
+      left: 1.5rem;
       transform: translateY(-10rem); 
-      position: fixed;
+      position: absolute;
       width: 2rem;
     }
     
     .Ko-fiPic img {
-      left: 0rem;
+      left: 0.8rem;
       transform: translateY(-6.988rem); 
-      position: fixed;
+      position: absolute;
       width:4rem;
+      
     }
     .c0inPic img {
     position: fixed;
@@ -321,7 +327,6 @@ transform: translateX(16rem);
     left: 0rem;
   }
     
-
 
 
 }
@@ -546,7 +551,9 @@ transform: translateX(16rem);
     position: fixed;
     left: 27rem;
       }
-  
+      .display{
+        transform: translateX(2.3rem);
+            }
   .display input {
     background-color: #338020;
     box-shadow: #344330;
@@ -618,6 +625,7 @@ transform: translateY(-11.375rem) ;
     position: fixed;
     left: -1rem;
   }
+  
   .GithubPic  img  {
     left: 4.7rem; 
     transform: translateY(-16.2rem); 
@@ -629,6 +637,7 @@ transform: translateY(-11.375rem) ;
     left: 5.3rem;
     transform: translateY(-11.188rem);
   position: fixed;
+  width: 2.3rem;
 }   
   
   .twitterPic  img {
