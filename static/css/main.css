@@ -227,12 +227,30 @@ transform: translateX(4.3rem);
     .display label {
       font-size: 1.25rem; 
     }
-    
-    
+    .menu-buttons ul {
+      list-style-type:none;
+     padding: 0;
+     float:left;
+    }
+    .menu-buttons li{
+      float:left;
+      display:block;
+      font-size:18px;
+      border-left: 1px solid black;
+      padding-bottom: 7px;
+  
+  }
+  li a {
+      text-decoration:none;
+      padding: 20px;
+  }
+
+
+
     .menu-button {
       background: #6e5494;
       height: 2.5rem;
-      transform: translateY(-18.75rem) ; 
+      transform: translateY(-16.3rem) ; 
       float: left;
       line-height: 2.5rem; 
       width: 3.438rem; 
@@ -242,11 +260,13 @@ transform: translateX(4.3rem);
       cursor: pointer;
       position: fixed;
       left: 0rem;
+      display: block;
     }
+
     .menu-button2 {
       background: #4692cc;
       height: 2.5rem; 
-    transform: translateY(-14.375rem) ; 
+    transform: translateY(-12.375rem) ; 
       float: left;
       line-height: 2.5rem; 
       width: 3.438rem; 
@@ -261,7 +281,7 @@ transform: translateX(4.3rem);
     .menu-button3 {
       background: #4692cc;
       height: 2.5rem; 
-     transform: translateY(-10.313rem);
+     transform: translateY(-8.313rem);
       float: left;
       line-height: 2.5rem; 
       width: 3.438rem; 
@@ -276,8 +296,7 @@ transform: translateX(4.3rem);
     .menu-button4 {
       background: #4692cc;
       height: 2.5rem; 
-      transform: translateY(-6.25rem) ; 
-      float: left;
+      float: none;
       line-height: 2.5rem; 
       width: 3.438rem; 
       text-align: center;
@@ -286,6 +305,7 @@ transform: translateX(4.3rem);
       cursor: pointer;
       position: fixed;
       left: 0rem;
+      transform: translateY(-4.313rem);
     }
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -293,31 +313,35 @@ transform: translateX(4.3rem);
 
 
     .GithubPic  img  {
-      left: 1rem; 
-    transform: translateY(-19.100rem); 
+      left: 0.5rem; 
+    transform: translateY(-16.7rem); 
      position: absolute;
      width: 3rem;
+     pointer-events: none;
     }
     
     .LinkedinPic img {
-      left: 1.3rem;
-       transform: translateY(-14.188rem); 
+      left: 0.7rem;
+       transform: translateY(-12.188rem); 
       position: absolute;
       width: 2.3rem;
+      pointer-events: none;
   }   
     
     .twitterPic  img {
-      left: 1.5rem;
-      transform: translateY(-10rem); 
+      left: 1rem;
+      transform: translateY(-8rem); 
       position: absolute;
       width: 2rem;
+      pointer-events: none;
     }
     
     .Ko-fiPic img {
-      left: 0.8rem;
-      transform: translateY(-6.988rem); 
+      left: 0rem;
+      transform: translateY(-4.988rem); 
       position: absolute;
       width:4rem;
+      pointer-events: none;
       
     }
     .c0inPic img {
