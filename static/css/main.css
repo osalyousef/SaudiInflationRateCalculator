@@ -212,9 +212,10 @@
     .displayContainer {
       transform: translateY(6.125rem) ;
       position: absolute;
-      left: 6rem;
         }
-    
+    .display{
+transform: translateX(16rem);
+    }
     .display input {
       background-color: #338020;
       box-shadow: #344330;
