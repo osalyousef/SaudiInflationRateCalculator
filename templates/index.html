@@ -5,8 +5,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Micro+5&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/Phone_mQuerie.css') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/laptop_mQuerie.css') }}">
 </header>
 {% endblock %}
 
@@ -16,25 +14,24 @@
 
 {% block body %}
 <form action="{{ url_for('calculate') }}" method="POST">
-  <div class="input-data1">
-    <input type="text" name="input1" id="input1" required>
-    <div class="underline"></div>
-    <label for="input1">ادخل المبلغ</label> </div>
-
-
-  <div class="input-data">
-     <div class="input-data2">
-    <input type="number" name="input2" id="input2" min="2018" max="2023" required>
-    <div class="underline"></div>
-    <label for="input2">ادخل السنة</label> </div>
 
 
 
-
+  <div class="form__group field">
+    <input type="input" class="form__field" placeholder="المبلغ" name="name" id='name' required />
+    <label for="name" class="form__label">المبلغ </label>
   </div>
-  <br>
-  <div class="calcContainer">
-    <button class="calculateButton" type="submit"> احسب </button>
+
+
+  <div class="form__group2 field">
+    <input type="number" class="form__field2" placeholder="2018 - 2023 " name="date1" id='date1' min="2018" max="2023" required />
+    <label for="date1" class="form__label2">التاريخ</label>
+  </div>
+
+
+
+<div class="calcContainer">
+ <button class="calculateButton" type="submit"> احسب </button>
   </div>
 
 
@@ -56,7 +53,9 @@
 
   
   <div class="headerText">
-    <h1>حاسبة التضخم السعودي</h1>
+    <h1>حاسبة التضخم السعودي 
+
+    </h1>
 </div>
 
 
@@ -65,7 +64,7 @@
 <div class="leftHeader">
 </div>
 <div class="c0inPic">
-  <img src="{{ url_for('static', filename='images/coin.png')}}" width="100" height="auto">
+  <img src="{{ url_for('static', filename='images/coin.png')}}">
 </div>
 
 
@@ -77,23 +76,23 @@
 </div>
 
 
-<div class="coinLogoPic">
-  <img src="{{ url_for('static', filename='images/GitHub.png')}}" width="50">
+<div class="GithubPic">
+  <img src="{{ url_for('static', filename='images/GitHub.png')}}">
 </div>
-<div class="personaPic">
-  <img src="{{ url_for('static', filename='images/LinkedIn.png')}}" width="33">
+<div class="LinkedinPic">
+  <img src="{{ url_for('static', filename='images/LinkedIn.png')}}">
 </div>
 <div class="twitterPic">
-  <img src="{{ url_for('static', filename='images/Twitter.png')}}" width="30">
+  <img src="{{ url_for('static', filename='images/Twitter.png')}}">
 </div>
 <div class="Ko-fiPic">
-  <img src="{{ url_for('static', filename='images/Ko-fi S Logo.webp')}}" width="55">
+  <img src="{{ url_for('static', filename='images/Ko-fi S Logo.webp')}}">
 </div>
 </form>
 
 
 <script>
-  // Handle form submission and display errors (optional)
+  // Handle form submission and display errors
   document.querySelector('form').addEventListener('submit', function(event) {
     const nowNum = document.getElementById('input1').value; // Changed input id
     const date = document.getElementById('input2').value;

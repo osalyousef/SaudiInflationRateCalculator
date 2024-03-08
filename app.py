@@ -8,8 +8,8 @@ def index():
 
 @app.route("/calculate", methods=["POST"])
 def calculate():
-    now_num = float(request.form["input1"])
-    date = request.form["input2"]
+    now_num = float(request.form["name"])
+    date = request.form["date1"]
 
     # Define a dictionary to store the annual inflation rates for each year
     annual_inflation_rates = {
