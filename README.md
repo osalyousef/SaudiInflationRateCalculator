@@ -1,7 +1,7 @@
 Saudi inflation rates calculator
 My first project , i wanted to do a project where i learn python , css and html 
 --
-Current goal: make the site compatible with phones , every help is apperacieted 
+Current goal: nothing that matters tbh but youre welcome to suggest
 --
 *note: you can ignore ds.store
 
