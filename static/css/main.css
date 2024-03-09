@@ -1,4 +1,4 @@
-@media screen and (min-width:320px ) and (max-width:1023px) {
+@media screen and (max-width:1023px) {
   
   input {
       font-family: "Alexandria";
@@ -19,6 +19,7 @@
       min-height: 100vh;
       background: #2e721c;
       font-family: "Alexandria", sans-serif;
+      overflow: hidden;
     }
     
     .topHeader {
@@ -318,6 +319,7 @@ transform: translateX(4.3rem);
      position: absolute;
      width: 3rem;
      pointer-events: none;
+     overflow: hidden;
     }
     
     .LinkedinPic img {
@@ -326,6 +328,9 @@ transform: translateX(4.3rem);
       position: absolute;
       width: 2.3rem;
       pointer-events: none;
+      overflow: hidden;
+     
+
   }   
     
     .twitterPic  img {
@@ -334,6 +339,7 @@ transform: translateX(4.3rem);
       position: absolute;
       width: 2rem;
       pointer-events: none;
+      
     }
     
     .Ko-fiPic img {
@@ -655,13 +661,23 @@ transform: translateY(-11.375rem) ;
     transform: translateY(-16.2rem); 
      position: fixed;
      width: 3.3rem;
+     -webkit-user-drag: none;
+     user-select: none;
+     -moz-user-select: none;
+     -webkit-user-select: none;
+     -ms-user-select: none;
   }
   
   .LinkedinPic img {
-    left: 5.3rem;
-    transform: translateY(-11.188rem);
+  left: 5.3rem;
+ transform: translateY(-11.188rem);
   position: fixed;
   width: 2.3rem;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }   
   
   .twitterPic  img {
@@ -669,6 +685,11 @@ transform: translateY(-11.375rem) ;
     transform: translateY(-7rem); 
     position: fixed;
     width: 1.9rem;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
   }
   
   .Ko-fiPic img {
@@ -676,12 +697,22 @@ transform: translateY(-11.375rem) ;
   transform: translateY(-3.688rem); 
   position: fixed;
   width: 3.4rem;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
   }
   .c0inPic img {
   position: fixed;
   width: 7rem;
   top: 0.3rem;
   left: 0.2rem;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 }
 @keyframes changeSize {
