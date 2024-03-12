@@ -262,6 +262,11 @@ transform: translateX(4.3rem);
       position: fixed;
       left: 0rem;
       display: block;
+      -webkit-user-drag: none;
+     user-select: none;
+     -moz-user-select: none;
+     -webkit-user-select: none;
+     -ms-user-select: none;
     }
 
     .menu-button2 {
@@ -277,6 +282,11 @@ transform: translateX(4.3rem);
       cursor: pointer;
       position: fixed;
       left: 0rem;
+      -webkit-user-drag: none;
+     user-select: none;
+     -moz-user-select: none;
+     -webkit-user-select: none;
+     -ms-user-select: none;
     }
     
     .menu-button3 {
@@ -292,6 +302,11 @@ transform: translateX(4.3rem);
       cursor: pointer;
       position: fixed;
       left: 0rem;
+      -webkit-user-drag: none;
+     user-select: none;
+     -moz-user-select: none;
+     -webkit-user-select: none;
+     -ms-user-select: none;
     }
     
     .menu-button4 {
@@ -307,6 +322,11 @@ transform: translateX(4.3rem);
       position: fixed;
       left: 0rem;
       transform: translateY(-4.313rem);
+      -webkit-user-drag: none;
+     user-select: none;
+     -moz-user-select: none;
+     -webkit-user-select: none;
+     -ms-user-select: none;
     }
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -320,6 +340,11 @@ transform: translateX(4.3rem);
      width: 3rem;
      pointer-events: none;
      overflow: hidden;
+     -webkit-user-drag: none;
+     user-select: none;
+     -moz-user-select: none;
+     -webkit-user-select: none;
+     -ms-user-select: none;
     }
     
     .LinkedinPic img {
@@ -329,7 +354,11 @@ transform: translateX(4.3rem);
       width: 2.3rem;
       pointer-events: none;
       overflow: hidden;
-     
+      -webkit-user-drag: none;
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
 
   }   
     
@@ -339,7 +368,11 @@ transform: translateX(4.3rem);
       position: absolute;
       width: 2rem;
       pointer-events: none;
-      
+      -webkit-user-drag: none;
+     user-select: none;
+     -moz-user-select: none;
+     -webkit-user-select: none;
+     -ms-user-select: none;
     }
     
     .Ko-fiPic img {
@@ -348,13 +381,22 @@ transform: translateX(4.3rem);
       position: absolute;
       width:4rem;
       pointer-events: none;
-      
+      -webkit-user-drag: none;
+     user-select: none;
+     -moz-user-select: none;
+     -webkit-user-select: none;
+     -ms-user-select: none;
     }
     .c0inPic img {
     position: fixed;
     width: 3.6rem;
     top: 0.3rem;
     left: 0rem;
+    -webkit-user-drag: none;
+     user-select: none;
+     -moz-user-select: none;
+     -webkit-user-select: none;
+     -ms-user-select: none;
   }
     
 
@@ -661,11 +703,7 @@ transform: translateY(-11.375rem) ;
     transform: translateY(-16.2rem); 
      position: fixed;
      width: 3.3rem;
-     -webkit-user-drag: none;
-     user-select: none;
-     -moz-user-select: none;
-     -webkit-user-select: none;
-     -ms-user-select: none;
+     
   }
   
   .LinkedinPic img {
