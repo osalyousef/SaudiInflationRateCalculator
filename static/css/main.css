@@ -1,10 +1,16 @@
-@media screen and (max-width:1023px) {
+@media screen and (min-width:320px ) and (max-width:1023px) {
   
   input {
       font-family: "Alexandria";
     }
     
-  
+    * {
+      margin: 0;
+      padding: 0;
+      outline: none;
+      box-sizing: border-box;
+      list-style: none;
+    }
     
     body {
       display: flex;
@@ -13,21 +19,8 @@
       min-height: 100vh;
       background: #2e721c;
       font-family: "Alexandria", sans-serif;
-    overflow: hidden;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-html , body {
-  width: 100%; height: 100%;
-  overflow: hidden;
-  touch-action: none;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
     }
-
+    
     .topHeader {
       height: 4.5rem;
       width: 100%;
@@ -268,11 +261,6 @@ transform: translateX(4.3rem);
       position: fixed;
       left: 0rem;
       display: block;
-      -webkit-user-drag: none;
-     user-select: none;
-     -moz-user-select: none;
-     -webkit-user-select: none;
-     -ms-user-select: none;
     }
 
     .menu-button2 {
@@ -288,11 +276,6 @@ transform: translateX(4.3rem);
       cursor: pointer;
       position: fixed;
       left: 0rem;
-      -webkit-user-drag: none;
-     user-select: none;
-     -moz-user-select: none;
-     -webkit-user-select: none;
-     -ms-user-select: none;
     }
     
     .menu-button3 {
@@ -308,11 +291,6 @@ transform: translateX(4.3rem);
       cursor: pointer;
       position: fixed;
       left: 0rem;
-      -webkit-user-drag: none;
-     user-select: none;
-     -moz-user-select: none;
-     -webkit-user-select: none;
-     -ms-user-select: none;
     }
     
     .menu-button4 {
@@ -328,11 +306,6 @@ transform: translateX(4.3rem);
       position: fixed;
       left: 0rem;
       transform: translateY(-4.313rem);
-      -webkit-user-drag: none;
-     user-select: none;
-     -moz-user-select: none;
-     -webkit-user-select: none;
-     -ms-user-select: none;
     }
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -345,12 +318,6 @@ transform: translateX(4.3rem);
      position: absolute;
      width: 3rem;
      pointer-events: none;
-     overflow: hidden;
-     -webkit-user-drag: none;
-     user-select: none;
-     -moz-user-select: none;
-     -webkit-user-select: none;
-     -ms-user-select: none;
     }
     
     .LinkedinPic img {
@@ -359,13 +326,6 @@ transform: translateX(4.3rem);
       position: absolute;
       width: 2.3rem;
       pointer-events: none;
-      overflow: hidden;
-      -webkit-user-drag: none;
-      user-select: none;
-      -moz-user-select: none;
-      -webkit-user-select: none;
-      -ms-user-select: none;
-
   }   
     
     .twitterPic  img {
@@ -374,11 +334,6 @@ transform: translateX(4.3rem);
       position: absolute;
       width: 2rem;
       pointer-events: none;
-      -webkit-user-drag: none;
-     user-select: none;
-     -moz-user-select: none;
-     -webkit-user-select: none;
-     -ms-user-select: none;
     }
     
     .Ko-fiPic img {
@@ -387,27 +342,18 @@ transform: translateX(4.3rem);
       position: absolute;
       width:4rem;
       pointer-events: none;
-      -webkit-user-drag: none;
-     user-select: none;
-     -moz-user-select: none;
-     -webkit-user-select: none;
-     -ms-user-select: none;
+      
     }
     .c0inPic img {
     position: fixed;
     width: 3.6rem;
     top: 0.3rem;
     left: 0rem;
-    -webkit-user-drag: none;
-     user-select: none;
-     -moz-user-select: none;
-     -webkit-user-select: none;
-     -ms-user-select: none;
   }
     
 
 
-
+}
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -709,19 +655,13 @@ transform: translateY(-11.375rem) ;
     transform: translateY(-16.2rem); 
      position: fixed;
      width: 3.3rem;
-     
   }
   
   .LinkedinPic img {
-  left: 5.3rem;
- transform: translateY(-11.188rem);
+    left: 5.3rem;
+    transform: translateY(-11.188rem);
   position: fixed;
   width: 2.3rem;
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
 }   
   
   .twitterPic  img {
@@ -729,11 +669,6 @@ transform: translateY(-11.375rem) ;
     transform: translateY(-7rem); 
     position: fixed;
     width: 1.9rem;
-    -webkit-user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
   }
   
   .Ko-fiPic img {
@@ -741,22 +676,12 @@ transform: translateY(-11.375rem) ;
   transform: translateY(-3.688rem); 
   position: fixed;
   width: 3.4rem;
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
   }
   .c0inPic img {
   position: fixed;
   width: 7rem;
   top: 0.3rem;
   left: 0.2rem;
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
 }
 }
 @keyframes changeSize {
@@ -799,4 +724,3 @@ transform: translateY(-11.375rem) ;
     transform: scale(1);
   }
 }
-
